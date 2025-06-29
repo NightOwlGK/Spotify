@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="size-full bg-black text-white relative">
+
+    <header class="w-full h-16 bg-black py-3 px-1 flex items-center gap-5 lg:gap-10 fixed z-10 lg:px-5">
+        <img class="h-full" src="./assets/logo.png" alt="Spotify Logo">
+        <h1 class="text-xl lg:text-2xl font-semibold">Spotify</h1>
+    </header>
+
+
+    <section class="h-screen bg-[url(../assets/bg.jpg)] bg-center bg-cover px-5 py-32 lg:px-20 space-y-3">
+        <h1 class="text-xl lg:text-2xl">BEST OF NCS - No Copyright sound</h1>
+        <div id="song-list" class="h-full flex flex-col gap-1 text-white lg:w-1/2">
+            <div class="size-full bg-white/20 backdrop-blur-xs rounded-full overflow-hidden p-1 flex items-center justify-between cursor-pointer">
+                <div class="h-full w-12 bg-red-500 rounded-full overflow-hidden">
+                    <img class="size-full object-cover" src="./assets/covers/1.jpg" alt="">
+                </div>
+                <h1 class="text-center">CHUBINA</h1>
+                <h1>1:30</h1>
+            </div>
+            <div class="size-full bg-white/20 backdrop-blur-xs rounded-full overflow-hidden p-1 flex items-center justify-between cursor-pointer">
+                <div class="h-full w-12 bg-red-500 rounded-full overflow-hidden">
+                    <img class="size-full object-cover" src="./assets/covers/2.jpg" alt="">
+                </div>
+                <h1 class="text-center">DIE FOR ME</h1>
+                <h1>2:38</h1>
+            </div>
+            <div class="size-full bg-white/20 backdrop-blur-xs rounded-full overflow-hidden p-1 flex items-center justify-between cursor-pointer">
+                <div class="h-full w-12 bg-red-500 rounded-full overflow-hidden">
+                    <img class="size-full object-cover" src="./assets/covers/3.jpg" alt="">
+                </div>
+                <h1 class="text-center">RENEGADE</h1>
+                <h1>3:55</h1>
+            </div>
+            <div class="size-full bg-white/20 backdrop-blur-xs rounded-full overflow-hidden p-1 flex items-center justify-between cursor-pointer">
+                <div class="h-full w-12 bg-red-500 rounded-full overflow-hidden">
+                    <img class="size-full object-cover" src="./assets/covers/4.jpg" alt="">
+                </div>
+                <h1 class="text-center">UNDER THE INFLUENCE</h1>
+                <h1>4:05</h1>
+            </div>
+            <div class="size-full bg-white/20 backdrop-blur-xs rounded-full overflow-hidden p-1 flex items-center justify-between cursor-pointer">
+                <div class="h-full w-12 bg-red-500 rounded-full overflow-hidden">
+                    <img class="size-full object-cover" src="./assets/covers/5.jpg" alt="">
+                </div>
+                <h1 class="text-center">Rauf & Faik я люблю</h1>
+                <h1>3:39</h1>
+            </div>
+            <div class="size-full bg-white/20 backdrop-blur-xs rounded-full overflow-hidden p-1 flex items-center justify-between cursor-pointer">
+                <div class="h-full w-12 bg-red-500 rounded-full overflow-hidden">
+                    <img class="size-full object-cover" src="./assets/covers/6.jpg" alt="">
+                </div>
+                <h1 class="text-center">Lady Gaga - Bloody Mary</h1>
+                <h1>4:05</h1>
+            </div>
+            <div class="size-full bg-white/20 backdrop-blur-xs rounded-full overflow-hidden p-1 flex items-center justify-between cursor-pointer">
+                <div class="h-full w-12 bg-red-500 rounded-full overflow-hidden">
+                    <img class="size-full object-cover" src="./assets/covers/7.jpg" alt="">
+                </div>
+                <h1 class="text-center">Rauf & Faik - колыбельная</h1>
+                <h1>4:40</h1>
+            </div>
+            <div class="size-full bg-white/20 backdrop-blur-xs rounded-full overflow-hidden p-1 flex items-center justify-between cursor-pointer">
+                <div class="h-full w-12 bg-red-500 rounded-full overflow-hidden">
+                    <img class="size-full object-cover" src="./assets/covers/8.jpg" alt="">
+                </div>
+                <h1 class="text-center">Lady Gaga - Poker Face</h1>
+                <h1>3:57</h1>
+            </div>
+            <div class="size-full bg-white/20 backdrop-blur-xs rounded-full overflow-hidden p-1 flex items-center justify-between cursor-pointer">
+                <div class="h-full w-12 bg-red-500 rounded-full overflow-hidden">
+                    <img class="size-full object-cover" src="./assets/covers/9.jpg" alt="">
+                </div>
+                <h1 class="text-center">Chris Brown - Under The Influence</h1>
+                <h1>3:01</h1>
+            </div>
+            <div class="size-full bg-white/20 backdrop-blur-xs rounded-full overflow-hidden p-1 flex items-center justify-between cursor-pointer">
+                <div class="h-full w-12 bg-red-500 rounded-full overflow-hidden">
+                    <img class="size-full object-cover" src="./assets/covers/10.jpg" alt="">
+                </div>
+                <h1 class="text-center">Nelly Furtado - Say It Right</h1>
+                <h1>3:34</h1>
+            </div>
+        </div>
+    </section>
+
+    <footer class="w-full h-20 left-0 bottom-0 bg-white/30 absolute backdrop-blur-xl py-2 px-10">
+        <audio id="audio-player">
+            <source id="audio-player-source" src="./assets/songs/1.mp3" type="audio/mp3">
+        </audio>
+        <input id="music-progress-bar" class="w-full" type="range" value="0">
+        <div class="flex justify-between">
+            <span></span>
+            <div class="text-2xl flex gap-5 justify-center items-center">
+                <i id="backward-button" class="fa-solid fa-backward-step cursor-pointer"></i>
+                <div id="play-button-div">
+                    <i id="play-button" class="fa-solid fa-play cursor-pointer"></i>
+                </div>
+                <div id="pause-button-div" class="hidden">
+                    <i id="pause-button" class="fa-solid fa-pause cursor-pointer"></i>
+                </div>
+                <i id="forward-button" class="fa-solid fa-forward-step cursor-pointer"></i>
+            </div>
+
+            <p id="song-time">0 : 00</p>
+        </div>
+    </footer>
+
+
+    <script src="./src/script.js"></script>
+
+</body>
+
+</html>
